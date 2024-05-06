@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khana</title>
+    <link rel="shortcut icon" type="image" href="/upper.jpg">
+
+
+    <!-- STYLE CSS LINK -->
+    <link rel="stylesheet" href="/new.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- STYLE CSS LINK -->
+
+    <!-- BOOTSTRAP CDN LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- BOOTSTRAP CDN LINK -->
+
+
+
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- FONT AWESOME CDN -->
+
+
+
+    <!-- GOOGLE FONTS LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS LINK -->
+</head>
+<body>
+    
+    <div class="nav container">
+        <nav class="navbar navbar-expand-sm" id="navbar">
+            <a href="home.html" class="navbar-brand" id="logo"><img src="/Khana (2).png" alt=""></a>
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/booking.html" class="nav-link">Booking</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/Review.html" class="nav-link">Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about.html" class="nav-link">About</a>
+                  </li>
+              </ul>
+              <div class="d-flex">
+                <input type="text" class="form-control me-2" id="form-control me-2" placeholder="Search menu items...">
+                <button class="button" id="btn" onclick="searchMenu()">Search</button>
+            </div>
+              </div>
+              </nav>  
+   
+    <!-- HEADER  -->
+    
+        <!-- NAV  -->
+                  
+            <!-- CART ICON  -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
+            <!-- CART  -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content">
+
+
+                </div>
+
+                <!-- TOTAL   -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Tk.0</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <button type="button" class="btn-buy" id="buy-now-btn">Buy Now</button>
+
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        
+            
+              
+</header> 
+<div id="google_translate_element"></div>
+
+    <!-- SHOP SECTION  -->
+    
+
+        <!-- CONTENT  -->
+
+        <section class="shop container">
+            <h1 class="section-title">Food Menu</h2><br>
+            <h2 class="section-title">Snacks Item</h2>
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="/samosas.jpg" alt="" class="product-img">
+                <h2 class="product-title">Samosa</h2>
+                <span class="product-price">Tk.10</span> 
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="/shingara.jpg" alt="" class="product-img">
+                <h2 class="product-title">Shingara</h2>
+                <span class="product-price">Tk.10</span> <p>(1 piece)</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="/poori-recipe-featured.jpg" alt="" class="product-img">
+                <h2 class="product-title">Poori</h2>
+                <span class="product-price">Tk.10</span> <p>(1 piece)</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="/chicken-momos-with-tomato-achar-46671-1.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Momo</h2>
+                <span class="product-price">Tk.200</span> <p>(1 plate = 8 pieces)</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="/shwarma.png" alt="" class="product-img">
+                <h2 class="product-title">Shwarma</h2>
+                <span class="product-price">Tk.150</span><p>(1 piece)</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="/veg-roll.jpg" alt="" class="product-img">
+                <h2 class="product-title">Vegetable Roll</h2>
+                <span class="product-price">Tk.80</span><p>(1 piece)</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 7 -->
+            <div class="product-box">
+                <img src="/Wings.jpg" alt="" class="product-img">
+                <h2 class="product-title">Chicken Wings</h2>
+                <span class="product-price">Tk.250</span><p>(1 plate = 6 pieces)</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="line" style="width: 100%; height: 2px; background-color: #e53937;"></div>
+      </div>
+
+
+      <section class="shop container">
+        <h2 class="section-title">Lunch Item</h2>
+
+        <!-- CONTENT  -->
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="/beef khichuri.jpg" alt="" class="product-img">
+                <h2 class="product-title">Beef Khichuri</h2>
+                <span class="product-price">Tk.280</span><p>(1 plate-Full)</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="/kacchi.png" alt="" class="product-img">
+                <h2 class="product-title">Kacchi Biriyani</h2>
+                <span class="product-price">Tk.430</span><p>(1 plate-Full)</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="/EggFriedRice.jpg" alt="" class="product-img">
+                <h2 class="product-title">Friend Rice</h2>
+                <span class="product-price">Tk.160</span><p>(1 plate-Full)</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="/polao+roast.jpg" alt="" class="product-img">
+                <h2 class="product-title">Polao & Roast</h2>
+                <span class="product-price">Tk.190</span><p>(1 plate-Full)</p>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="line" style="width: 100%; height: 2px; background-color: #e53937;"></div>
+      </div>
+
+      <section class="shop container">
+        <h2 class="section-title">Drinks Item</h2>
+
+      <!-- CONTENT  -->
+      <div class="shop-content">
+        <!-- BOX 1 -->
+        <div class="product-box">
+            <img src="/borhani.png" alt="" class="product-img">
+            <h2 class="product-title">Borhani</h2>
+            <span class="product-price">Tk.120</span><p>(1 bottle = 400ml)</p>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- BOX 2 -->
+        <div class="product-box">
+            <img src="/StrawberryMilkshake.jpg" alt="" class="product-img">
+            <h2 class="product-title">Strawberry Shake</h2>
+            <span class="product-price">Tk.80</span><p>(1 glass)</p>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- BOX 3 -->
+        <div class="product-box">
+            <img src="/coffee-milkshake-square.jpg" alt="" class="product-img">
+            <h2 class="product-title">Coffee Milkshake</h2>
+            <span class="product-price">Tk.130</span><p>(1 glass)</p>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- BOX 4 -->
+        <div class="product-box">
+            <img src="/Coffee.png" alt="" class="product-img">
+            <h2 class="product-title">Cappuccino</h2>
+            <span class="product-price">Tk.150</span><p>(1 cup)</p>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- BOX 5 -->
+        <div class="product-box">
+            <img src="/tea.jpg" alt="" class="product-img">
+            <h2 class="product-title">Milk Tea</h2>
+            <span class="product-price">Tk.65</span><p>(1 cup)</p>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- BOX 6 -->
+        <div class="product-box">
+            <img src="/Keto-Frozen-Mint-Lemonade-5.jpg" alt="" class="product-img">
+            <h2 class="product-title">Mint Lemonade</h2>
+            <span class="product-price">Tk.90</span><p>(1 glass)</p>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    
+    // Function to change the language based on selection
+    function changeLanguage(language) {
+        if (language) {
+            googleTranslateElementInit();
+            // Change the page language to the selected language
+            document.documentElement.lang = language;
+        }
+    }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- Google Translate JavaScript -->
+<script src="/search.js"></script>
+      <script src="/new.js"></script>
+  </body>
+  </html>
+
+    <!-- link js  -->
+    
